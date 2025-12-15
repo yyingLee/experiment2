@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25216950604音乐播放器</title>
+    <link rel="stylesheet" href="./css/audio.css">
+</head>
+<body background="./img/bg0.png">
+    <!-- <div id="body" background="./img/bg0.png"> -->
+        <!-- 上半部分 -->
+        <div class="upper-container">
+            <!-- 唱片 -->
+            <div class="record-container">
+                <div class="record-bg">
+                    <div id="record-img" class="rotate-play"></div>
+
+                </div>
+
+            </div>
+        <!-- 右边歌曲名 -->
+        <div class="introdution-container">
+            <div class="text-container">
+                <div class="music-title">音乐1</div>
+                <div class="author-container">
+                    作者：
+                    <span class="author-name">lyy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 下半部分 -->
+        <div class="bottom-container">
+
+        <!-- 音频 -->
+        <audio id="audioTag"></audio>
+
+        <!-- 进度条 -->
+        <div class="progress">
+            <div class="progress-play"></div>
+        </div>
+        
+        
+
+        <!-- 控制按钮 -->
+        <div class="controls">
+            <div class="timer-container">
+                <span class="played-time">00:00</span>&nbsp;/&nbsp;
+                <span class="audio-time">00:00</span>
+            </div>
+            <div class="center-container">
+                <!-- 播放模式 -->
+                 <div class="playMode center-icon"></div>
+                 <div class="beforMusic center-icon"></div>
+                 <div class="playPause center-icon icon-play"></div>
+                 <div class="nextMusic center-icon"></div>
+                 <div class="volumn center-icon"></div>
+                 <!-- 音量进度条 -->
+                  <input type="range" id="volumn-togger" value="70"
+                  min="0" max="100" step="1">
+            </div>
+            <div class="right-container">
+                <!-- MV -->
+                 <div id="MV" class="bottom-icon"></div>
+                 <div id="speed">1.0X</div>
+                 <div id="list" class="bottom-icon"></div>
+            </div>
+        </div>
+     </div>   
+     <div class="close-container"></div>
+     <div class="list-container">
+        <div class="musicListTitle">播放队列</div>
+        <hr>
+        <div class="musicLists">
+            <!-- <div class="music0 each-music">洛春赋</div>
+            <div class="music1 each-music">第二首</div>
+            <div class="music2 each-music">第三首</div> -->
+        </div>
+     </div>
+      
+</body>
+</html>
+<script src="./js/audio.js"></script>  
